@@ -1,0 +1,28 @@
+/* components/ButtonAnimation.module.css */
+
+.container {
+    position: relative;
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  .button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease;
+  }
+  
+  .moveUp {
+    animation: moveUpAnimation 0.5s ease infinite alternate;
+  }
+  
+  @keyframes moveUpAnimation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
